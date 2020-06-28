@@ -125,9 +125,31 @@ ul {
     margin-left: 30px;
 }
 
-.auth-nav-image {
-    margin-right: 10px;
+.item-mail::before {
+    content: "";
+    width: 32px;
+    height: 32px;
 }
+
+.item-mail::before {
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+}
+
+.item-smartphone::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+}
+
+.item-smartphone::before {
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+}
+
+/* .auth-nav-image {
+    margin-right: 10px;
+} */
 
 /* 
 
@@ -394,21 +416,26 @@ h4 {
     padding-bottom: 24px;
 }
 
-.social-item > a {
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    fill: #AFB1B8;
+}
+
+.social-link:hover {
+    background-color: #2196F3;
+    fill: #fff;
 }
 
 .social-icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
-}
-
-.social-icon:hover {
-    fill: #fff;
-    background-color: #2196f3;
 }
 
 /* Постоянные клиенты */
@@ -417,16 +444,7 @@ h4 {
     margin-bottom: 94px;
 }
 
-.clients li {
-    width: 170px;
-    height: 90px;
-
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-.clients ul {
+.clients-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -438,9 +456,32 @@ h4 {
     margin-left: 30px;
 }
 
-.clients img {
-    margin-left: 60px;
-    margin-top: 23px;
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-icon {
+    width: 100px;
+    height: 45px;
+}
+
+.clients-link {
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    fill: #AFB1B8;
+}
+
+.clients-link:hover {
+    border: 1px solid #2196F3;
+    cursor: pointer;
+    fill: #2196f3;
 }
 
 /* Портфолио > фильтры */
@@ -620,13 +661,40 @@ h4 {
     margin-left: 69px;
 }
 
+.social-networks li + li {
+    margin-left: 10px;
+}
+
 .social-networks-list {
     display: flex;
     justify-content: space-between;
 
     padding-top: 20px;
+}
 
-    color: #fff;
+.social-networks-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    fill: #fff;
+}
+
+.social-networks-item:hover {
+    border-radius: 50%;
+    background-color: #2196F3;
+
+    cursor: pointer;
+}
+
+.social-networks-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .mailing {
