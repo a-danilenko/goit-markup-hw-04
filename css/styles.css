@@ -148,7 +148,7 @@ ul {
     width: 1600px;
     height: 600px;
 
-    background: rgba(47, 48, 58, 0.8);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-img.jpg);
 }
 
 h1 {
@@ -230,6 +230,16 @@ h4 {
 
 /* Features */
 
+.features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+
 .features {
     font-family: Roboto;
     font-style: normal;
@@ -259,7 +269,7 @@ h4 {
     border-radius: 4px;
 }
 
-.features-list  img {
+.features-list  svg {
     margin-left: 102px;
     margin-right: 102px;
     padding-top: 25px;
@@ -279,8 +289,23 @@ h4 {
 
 .our-work-item {
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
+
+    width: 370px;
+    height: 295px;
     margin-top: 50px;
+}
+
+.our-work-item1 {
+    background-image: url(../images/box1.jpg);
+}
+
+.our-work-item2 {
+    background-image: url(../images/box2.jpg);
+}
+
+.our-work-item3 {
+    background-image: url(../images/box3.jpg);
 }
 
 .our-work-item + .our-work-item {
@@ -331,16 +356,6 @@ h4 {
     margin-left: 30px;
 }
 
-.team-card ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    margin-top: 30px;
-    padding-bottom: 38px;
-}
-
-
 .full-name {
     margin-top: 30px;
 
@@ -367,6 +382,33 @@ h4 {
     letter-spacing: 0.03em;
 
     color: #757575;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 16px;
+    padding-bottom: 24px;
+}
+
+.social-item > a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.social-icon:hover {
+    fill: #fff;
+    background-color: #2196f3;
 }
 
 /* Постоянные клиенты */
@@ -574,11 +616,11 @@ h4 {
     color: #2196F3;
 }
 
-.social {
+.social-networks {
     margin-left: 69px;
 }
 
-.social-networks {
+.social-networks-list {
     display: flex;
     justify-content: space-between;
 
