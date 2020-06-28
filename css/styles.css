@@ -94,6 +94,8 @@ ul {
 
 .site-nav-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
@@ -108,11 +110,14 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  fill: #757575;
 }
 
 .auth-nav a:hover,
 .auth-nav a:focus {
   color: #2196f3;
+
+  fill: #2196f3;
 }
 
 .auth-nav {
@@ -121,30 +126,12 @@ ul {
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.auth-nav-icon {
+  margin-right: 10px;
+}
+
+.auth-nav li + li {
   margin-left: 30px;
-}
-
-.item-mail::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-}
-
-.item-mail::before {
-  margin-right: 10px;
-  background-image: url(../images/sprite2.svg#envelope);
-}
-
-.item-smartphone::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-}
-
-.item-smartphone::before {
-  margin-right: 10px;
-  background-image: url(../images/sprite2.svg#smartphone);
 }
 
 /* 
