@@ -45,6 +45,9 @@ ul {
 }
 
 .logo-top {
+  display: flex;
+  flex-direction: row;
+
   margin-left: 215px;
 
   font-family: Raleway;
@@ -65,8 +68,7 @@ ul {
 }
 
 .site-nav {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .site-nav a {
