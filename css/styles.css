@@ -340,7 +340,6 @@ h4 {
 /* Наша команда */
 
 .team {
-  width: 100%;
   margin-top: 94px;
   background: #f5f4fa;
 }
@@ -349,6 +348,8 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  padding: 0 215px;
 }
 
 .team-card {
